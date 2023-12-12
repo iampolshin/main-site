@@ -1,0 +1,18 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .back_button {
+        padding: 10px 20px;
+        background-color: #005bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: Roboto, sans-serif;
+    }
+
+    .back_button:hover {
+        background-color: #f71056;
+    }
+}

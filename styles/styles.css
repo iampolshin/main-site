@@ -1,0 +1,385 @@
+.html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-style: normal;
+    font-size: 32px;
+    line-height: 32.5px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body:hover a#scrollBtn {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+.heading {
+    width: 100%;
+    height: 84px;
+    display: flex;
+    background: #005bff;
+    position: static;
+    font-weight: bolder;
+    top: 0px;
+}
+
+.main_container {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 55px;
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_link {
+    text-decoration: none;
+    line-height: 45px;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.nav_link:hover,
+.nav_link:focus,
+.nav_link:active {
+    opacity: 0.75;
+}
+
+.logo {
+    width: 10%;
+    height: 50%;
+    background: linear-gradient(white, white), linear-gradient(#f71056, #f71056);
+    background-position: left center, right center;
+    background-size: 50% 100%, 50% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    .dot {
+        width: 15%;
+        height: 40%;
+        background-color: #005bff;
+        border-radius: 50%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.head_banner {
+    background-size: cover;
+    padding: 20.5vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.head_banner .head_banner_text {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 6vw;
+    color: #FFFFFF;
+    justify-content: center;
+    position: relative;
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+.head_banner .info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3vw;
+    line-height: 56px;
+    color: #FFFFFF;
+    padding-bottom: 7%;
+    padding-left: 15%;
+    padding-right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.head_banner:hover .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.head_banner#malikov {
+    background-position-y: 50%;
+    background-image: url(../img/malikov_head.png);
+}
+
+.head_banner#gagarina {
+    background-position-y: 10%;
+    background-image: url(../img/gagarina_head.jpg);
+}
+
+.head_banner_text {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+.motivation {
+    padding-bottom: 92px;
+    padding-top: 48px;
+    background-color: #EEEEEE;
+}
+
+.motivation_head,
+.video_block_text {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: #005bff;
+    font-weight: bolder;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.motivation_text {
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    color: #000000;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.quote {
+    background-image: url(../img/background2.png);
+    height: fit-content;
+    background-size: cover;
+    background-position: center 0;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    padding: 128px 0px;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+}
+
+.quote p {
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+.video_content {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    text-align: left;
+}
+
+.video_block {
+    padding-top: 48px;
+    padding-bottom: 60px;
+    background: #FFFFFF;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.caption {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.description-text {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.team {
+    background: #EEEEEE;
+    padding-top: 48px;
+    padding-bottom: 40px;
+}
+
+.team_head {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #005bff;
+}
+
+.name {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #005bff;
+}
+
+.post {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.figure {
+    margin: 0;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+figcaption {
+    padding-top: 12px;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 82px;
+    flex-basis: 33%;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333333;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+.footer_links {
+    text-align: center;
+}
+
+.footer_links a {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer_links::before {
+    content: "Мои другие работы";
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer_text {
+    width: 540px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+a#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #005bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a#scrollBtn:hover {
+    background-color: #f71056;
+}
+
+a#scrollBtn:focus {
+    animation: scrollToTop 0.5s ease forwards;
+}
+
+@keyframes scrollToTop {
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+#motivation,
+#video_block,
+#team {
+    border-top: 84px solid transparent;
+    margin-top: -84px;
+    background-clip: padding-box;
+}
+
+.nav_link:hover {
+    font-size: 28px;
+}

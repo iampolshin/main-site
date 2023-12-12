@@ -1,0 +1,28 @@
+.form,
+#result {
+    max-width: 400px;
+    padding: 30px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+    margin-bottom: 10px;
+}
+
+.form input,
+.form button {
+    margin-bottom: 15px;
+}
+
+#resultImage {
+    width: 150px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}

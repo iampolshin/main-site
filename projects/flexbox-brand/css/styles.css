@@ -1,0 +1,114 @@
+.base-element {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.base-element .image {
+    height: fit-content;
+    width: 50%;
+    position: absolute;
+    opacity: 0;
+    bottom: 10%;
+    left: 25%;
+    transform: scale(0.5);
+}
+
+.base-element .text {
+    height: fit-content;
+    width: 60%;
+    position: absolute;
+    opacity: 0;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.base-element:hover #letterV,
+.base-element:hover #letterP {
+    animation: circle_animation 1.5s cubic-bezier(1, 0.9, 1, 0.9) infinite;
+}
+
+.base-element:active {
+    filter: sepia(1);
+    transition: 5s;
+}
+
+.base-element:active .letters {
+    transform: scaleX(-1);
+}
+
+.base-element:active path {
+    fill: pink;
+}
+
+.base-element:active .image {
+    opacity: 1;
+    transform: scale(1);
+    transition: 3s;
+}
+
+.base-element:active .text {
+    opacity: 1;
+    transition: 2s;
+}
+
+@keyframes circle_animation {
+    0% {
+        transform: translate(5px, -50px);
+    }
+
+    7% {
+        transform: translate(20px, -45px);
+    }
+
+    15% {
+        transform: translate(35px, -25px);
+    }
+
+    22% {
+        transform: translate(40px, 0);
+    }
+
+    30% {
+        transform: translate(35px, 25px);
+    }
+
+    37% {
+        transform: translate(20px, 45px);
+    }
+
+    45% {
+        transform: translate(5px, 50px);
+    }
+
+    52% {
+        transform: translate(-10px, 45px);
+    }
+
+    60% {
+        transform: translate(-25px, 25px);
+    }
+
+    67% {
+        transform: translate(-30px, 0);
+    }
+
+    75% {
+        transform: translate(-25px, -25px);
+    }
+
+    82% {
+        transform: translate(-10px, -45px);
+    }
+
+    100% {
+        transform: translate(5px, -50px);
+    }
+}
